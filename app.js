@@ -3,7 +3,6 @@ const libraryList = document.querySelector('.library-list');
 const newBookBtn = document.querySelector('.new-book-button');
 const formPopUp = document.querySelector('#form-addbook');
 const submitForm = document.querySelector('.submit');
-const removeBook = document.querySelector('.removeBtn')
 
 
 //create a new book to be added to libary 
@@ -44,7 +43,7 @@ function clearDisplay() {
 
 
 
-addBookToLibrary(new book('tolkein', 'dog', 99));
+addBookToLibrary(new book('Harry Potter and the Sorcerors Stone', 'J.K Rowling', 222));
 console.log(library)
 
 newBookBtn.addEventListener('click', () => {
@@ -69,5 +68,7 @@ function clearForm() {
     document.querySelector('#form-pages').value = '';
 }
 
-//above all works, I have a library, where I can determine a new book, and place that new book in the library, and reprint it out
-
+/*removeBtn.forEach(btn => {
+btn.addEventListener('click', () =>{
+    library.splice(tr,1);
+})});*/
