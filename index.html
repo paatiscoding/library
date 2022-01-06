@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Eczar">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Raleway">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img id="logo" src="assets/logo/logo.png" alt="three books side by side as a logo">
+            <h1>Library</h1>
+        </header>
+        
+        <section class='button-container'> 
+            <button class="new-book-button">NEW BOOK</button>
+        </section>
+
+            <div class="form-container">
+                <form id="form-addbook" action="#">
+                    <h2>Book Details</h2>
+                    <div>
+                        <label for="form-title">Title of Book:</label>
+                        <input type="text" id="form-title" name="form-title">
+                    </div>
+                    <div>
+                        <label for="form-author">Author of Book:</label>
+                        <input type="text" id="form-author" name="form-author">
+                    </div>
+                    <div>
+                        <label for="form-pages">Number of Pages:</label>
+                        <input type="text" id="form-pages" name="form-pages">
+                    </div>
+                    <div>
+                        <label for="form-readstatus">Have you finished reading this book?</label>
+                        <input type="checkbox" id="form-readstatus" name="form-readstatus" value="read">
+                    </div>
+                    <button class="submit">Submit</button>
+                </form>
+            </div>
+
+  
+        <section class= "viewlibrary">
+            <div class="divider"></div>
+            <table class="library-list">
+            </table>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
