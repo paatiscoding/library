@@ -25,21 +25,21 @@
                     <h2>Book Details</h2>
                     <div>
                         <label for="form-title">Title of Book:</label>
-                        <input type="text" id="form-title" name="form-title">
+                        <input type="text" id="form-title" name="form-title" required />
                     </div>
                     <div>
                         <label for="form-author">Author of Book:</label>
-                        <input type="text" id="form-author" name="form-author">
+                        <input type="text" id="form-author" name="form-author" required />
                     </div>
                     <div>
                         <label for="form-pages">Number of Pages:</label>
-                        <input type="text" id="form-pages" name="form-pages">
+                        <input type="number" id="form-pages" name="form-pages" required />
                     </div>
                     <div>
                         <label for="form-readstatus">Have you finished reading this book?</label>
-                        <input type="checkbox" id="form-readstatus" name="form-readstatus" value="read">
+                        <input type="checkbox" id="form-readstatus" name="form-readstatus">
                     </div>
-                    <button class="submit">Submit</button>
+                    <button class ="submit" type="submit">Submit</button>
                 </form>
             </div>
 
@@ -47,6 +47,11 @@
         <section class= "viewlibrary">
             <div class="divider"></div>
             <table class="library-list">
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                </tr>
             </table>
         </section>
     </div>
